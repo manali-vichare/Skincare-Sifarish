@@ -176,6 +176,6 @@ if model_run:
      # Select relevant columns
     top_picks = top_picks[['Label', 'Brand', 'Name', 'Price','Rank']]
     top_picks = top_picks.reset_index(drop=True)
-    top_picks = top_picks.drop(top_matches.index[0])
+    top_picks = top_picks.drop(top_picks.index[0])
 
     st.dataframe(top_picks.head(5))
