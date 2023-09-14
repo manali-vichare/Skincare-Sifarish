@@ -2,11 +2,11 @@ import streamlit as st
 import pandas as pd
 import numpy as np
 from sklearn.manifold import TSNE 
-import umap.umap_ as umap
-from umap import UMAP
 from math import dist
 from PIL import Image
 
+import umap.umap_ as umap
+from umap import UMAP
 
 # Logo image
 def add_bg_from_url():
